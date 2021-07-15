@@ -1,9 +1,49 @@
 /* Fundation
 ---------------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+input {
+  outline: none;
+}
+
 /* layout
 ---------------------------------------------------------*/
+.l-header {
+  background: #FFF7EF;
+  position: absolute;
+  height: 217px;
+  width: 100vw;
+}
+.l-header .ham-menu {
+  margin: 14px 16px auto auto;
+  height: 26px;
+  width: 51px;
+  font-style: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+  line-height: 1.3;
+}
+.l-header .Top__title {
+  font-style: Roboto;
+  font-size: 40px;
+  font-weight: bold;
+  color: #707070;
+  line-height: 1.3;
+  margin: 0 86px 0 86px;
+  padding: 0;
+  text-align: center;
+}
+
 /* component
 ---------------------------------------------------------*/
+.c-searchform {
+  height: 46px;
+  width: 320px;
+}
+
 /* project
 ---------------------------------------------------------*/
 /* utility
