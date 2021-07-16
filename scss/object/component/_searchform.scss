@@ -1,5 +1,30 @@
-.c-searchform{
-    height: 46px;
-    width: 320px;
+.c-search{
+    margin: 38px 6.5% 0 8.2%;
+    display: flex;
+    .search-form{
+        height: 46px;
+        width: 230px;
+        margin-right: 14px;
+        &::before{
+            height: 46px;
+            width: 46px;
+            content: "";
+            background-image: url(..../images/search.svg);
+        }
+        .search-text{
+            height: 46px;
+            width: 230px;
+            border-width: 1px;
+            border-radius: 10px;
+            padding-left: 46px;
+        }
+    }
+    
+    .submit{
+        height: 46px;
+        width: 78px;
+        border-width: 1px;
+        border-radius: 10px;
+    }
    
 }

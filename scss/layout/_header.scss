@@ -1,20 +1,20 @@
 .l-header{
     background: #FFF7EF;
-    position: absolute;
+    overflow: hidden;
     height: 217px;
     width: 100vw;
     .ham-menu{
         margin: 14px 16px auto auto;
         height: 26px;
         width: 51px;
-        font-style: Roboto;
+        font-family: "Roboto";
         font-size: 20px;
         font-weight: bold;
         color: #707070;
         line-height: 1.3;
     }
     .Top__title{
-        font-style: Roboto;
+        font-family: "Roboto";
         font-size: 40px;
         font-weight: bold;
         color: #707070;

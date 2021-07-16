@@ -2,6 +2,7 @@
 ---------------------------------------------------------*/
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 input {
@@ -12,7 +13,7 @@ input {
 ---------------------------------------------------------*/
 .l-header {
   background: #FFF7EF;
-  position: absolute;
+  overflow: hidden;
   height: 217px;
   width: 100vw;
 }
@@ -20,14 +21,14 @@ input {
   margin: 14px 16px auto auto;
   height: 26px;
   width: 51px;
-  font-style: Roboto;
+  font-family: "Roboto";
   font-size: 20px;
   font-weight: bold;
   color: #707070;
   line-height: 1.3;
 }
 .l-header .Top__title {
-  font-style: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: bold;
   color: #707070;
@@ -39,9 +40,36 @@ input {
 
 /* component
 ---------------------------------------------------------*/
-.c-searchform {
+.c-search {
+  margin: 38px 6.5% 0 8.2%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.c-search .search-form {
   height: 46px;
-  width: 320px;
+  width: 230px;
+  margin-right: 14px;
+}
+.c-search .search-form::before {
+  height: 46px;
+  width: 46px;
+  content: "";
+  background-image: url(..../images/search.svg);
+}
+.c-search .search-form .search-text {
+  height: 46px;
+  width: 230px;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-left: 46px;
+}
+.c-search .submit {
+  height: 46px;
+  width: 78px;
+  border-width: 1px;
+  border-radius: 10px;
 }
 
 /* project
