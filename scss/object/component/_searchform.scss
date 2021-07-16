@@ -9,7 +9,11 @@
             height: 46px;
             width: 46px;
             content: "";
-            background-image: url(..../images/search.svg);
+            background-image: url("..../images/search.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            position: absolute;
         }
         .search-text{
             height: 46px;
