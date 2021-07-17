@@ -10,7 +10,8 @@
             height: 46px;
             width: 46px;
             content: "";
-            background-image: url("..../image/search.svg");
+            background-image: url("../../../image/search.svg");
+            background-size: 50% 50%;
             background-repeat: no-repeat;
             background-position: center;
             display: inline-block;
@@ -30,6 +31,7 @@
         width: 78px;
         border-width: 1px;
         border-radius: 10px;
+        font-size: 17px;
     }
    
 }
