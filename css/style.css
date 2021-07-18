@@ -2,11 +2,10 @@
 ---------------------------------------------------------*/
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-weight: bold;
 }
 
@@ -26,13 +25,11 @@ input {
   margin: 14px 16px auto auto;
   height: 26px;
   width: 51px;
-  font-family: "Roboto";
   font-size: 20px;
   color: #707070;
   line-height: 1.3;
 }
 .l-header .Top__title {
-  font-family: "Roboto";
   font-size: 40px;
   color: #707070;
   line-height: 1.3;
@@ -43,6 +40,60 @@ input {
 
 /* component
 ---------------------------------------------------------*/
+.c-main__card {
+  height: 642px;
+  width: 90%;
+  margin: 5%;
+  position: relative;
+}
+.c-main__card__title {
+  font-size: 41px;
+  color: #eaeaea;
+  position: absolute;
+  margin: 2% 0 0 3%;
+}
+.c-main__card__items {
+  position: absolute;
+  margin: 297px 3% 0 3%;
+}
+.c-main__card__item {
+  height: 163px;
+  color: #3c2a10;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+}
+.c-main__card__item dt {
+  font-size: 22px;
+  position: absolute;
+  margin: 12% 0 0 3%;
+}
+.c-main__card__item dd {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: serif;
+}
+
+.takeout {
+  background: url(../image/take-out.png) no-repeat center center/cover;
+}
+
+.eatin {
+  background: url(../image/eat-in.png) no-repeat center center/cover;
+}
+
+.c-main__top {
+  height: 285px;
+  width: 100vw;
+  background: url(../image/home_top.png) no-repeat center center/cover;
+  position: relative;
+}
+.c-main__top__title {
+  font-size: 36px;
+  color: #ffffff;
+  position: absolute;
+  margin: 119px 0 0 25px;
+}
+
 .c-search {
   width: 320px;
   margin: 38px auto 0 auto;
@@ -55,14 +106,14 @@ input {
   height: 46px;
   width: 230px;
   margin-right: 14px;
+  position: relative;
 }
 .c-search .search-form::before {
   height: 46px;
   width: 46px;
   content: "";
-  background-image: url("../../../image/search.svg");
+  background-image: url("../image/search.svg");
   background-size: 50% 50%;
-  background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
   position: absolute;

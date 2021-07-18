@@ -1,0 +1,12 @@
+.c-main__top{
+    height: 285px;
+    width: 100vw;
+    background: url(../image/home_top.png) no-repeat center center / cover;
+    position: relative;
+    &__title{
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        margin: 119px 0 0 25px;
+    }
+}

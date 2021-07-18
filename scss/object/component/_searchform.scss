@@ -6,13 +6,13 @@
         height: 46px;
         width: 230px;
         margin-right: 14px;
+        position: relative;
         &::before{
             height: 46px;
             width: 46px;
             content: "";
-            background-image: url("../../../image/search.svg");
+            background-image: url("../image/search.svg");
             background-size: 50% 50%;
-            background-repeat: no-repeat;
             background-position: center;
             display: inline-block;
             position: absolute;

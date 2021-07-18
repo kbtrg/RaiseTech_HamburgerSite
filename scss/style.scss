@@ -8,11 +8,14 @@
 ---------------------------------------------------------*/
 @import "layout/_footer";
 @import "layout/_header";
+@import "layout/_main";
 @import "layout/_sidebar";   
 
 
 /* component
 ---------------------------------------------------------*/
+@import "object/component/_main__card";
+@import "object/component/_main__top";
 @import "object/component/_searchform";
 
 
