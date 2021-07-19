@@ -55,7 +55,7 @@ input {
 }
 .c-main__content__items {
   position: absolute;
-  margin: 297px 3% 0 3%;
+  margin: 297px 3% 0;
 }
 .c-main__content__item {
   height: 163px;
@@ -72,6 +72,7 @@ input {
   font-weight: 400;
   font-size: 16px;
   font-family: serif;
+  margin: 20px 4.5% 20px 3%;
 }
 
 .takeout {
@@ -85,12 +86,22 @@ input {
 .map {
   height: 690px;
   width: 100vw;
+  margin-top: 29px;
   background: url(../image/map.png) no-repeat center center/cover;
+  overflow: hidden;
+}
+.map__title {
+  font-size: 30px;
+  margin: 11% auto auto 40px;
 }
 .map .line {
   width: 75px;
   border-top: 1px solid #000;
   margin-top: 20px;
+}
+.map__content {
+  width: 79%;
+  margin: 40px auto 61px;
 }
 
 .c-main__top {
