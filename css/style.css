@@ -40,32 +40,35 @@ input {
 
 /* component
 ---------------------------------------------------------*/
-.c-main__card {
+.c-main__content {
   height: 642px;
   width: 90%;
   margin: 5%;
   position: relative;
 }
-.c-main__card__title {
+.c-main__content__title {
   font-size: 41px;
   color: #eaeaea;
   position: absolute;
   margin: 2% 0 0 3%;
+  line-height: 1.3;
 }
-.c-main__card__items {
+.c-main__content__items {
   position: absolute;
   margin: 297px 3% 0 3%;
 }
-.c-main__card__item {
+.c-main__content__item {
   height: 163px;
   color: #3c2a10;
   background: rgba(255, 255, 255, 0.8);
-  margin-bottom: 5px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
 }
-.c-main__card__item > dt {
+.c-main__content__item > dt {
   font-size: 22px;
+  margin: 19px 0 0 3%;
 }
-.c-main__card__item > dd {
+.c-main__content__item > dd {
   font-weight: 400;
   font-size: 16px;
   font-family: serif;
@@ -77,6 +80,17 @@ input {
 
 .eatin {
   background: url(../image/eat-in.png) no-repeat center center/cover;
+}
+
+.map {
+  height: 690px;
+  width: 100vw;
+  background: url(../image/map.png) no-repeat center center/cover;
+}
+.map .line {
+  width: 75px;
+  border-top: 1px solid #000;
+  margin-top: 20px;
 }
 
 .c-main__top {
