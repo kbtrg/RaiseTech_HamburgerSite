@@ -44,14 +44,14 @@
     background: #000;
     margin-top: 29px;
     position: relative;
-    z-index: 100;
+    z-index: 10;
     overflow: hidden;
     .layer2--black{
         height: 415px;
         width: 100vw;
-        background: rgba(0,0,0,0.3);
+        background: rgba(255,255,255,0.3);
         position: absolute;
-        z-index: 50;
+        z-index: 30;
         .map{
             height: 690px;
             width: 100vw;
@@ -76,6 +76,8 @@
                 margin-top: 20px;
             }
             .map__content{
+                font-size: 14px;
+                line-height: 2.36;
                 width: 79%;
                 margin: 40px auto 61px;
             }
