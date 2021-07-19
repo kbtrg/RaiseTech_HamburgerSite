@@ -38,23 +38,47 @@
 .eatin{
     background: url(../image/eat-in.png) no-repeat center center / cover;
 }
-.map{
+.layer1--black{
     height: 690px;
     width: 100vw;
+    background: #000;
     margin-top: 29px;
-    background: url(../image/map.png) no-repeat center center / cover;
+    position: relative;
+    z-index: 100;
     overflow: hidden;
-    &__title{
-        font-size: 30px;
-        margin: 11% auto auto 40px;
-    }
-    .line{
-        width: 75px;
-        border-top: 1px solid #000;
-        margin-top: 20px;
-    }
-    &__content{
-        width: 79%;
-        margin: 40px auto 61px;
+    .layer2--black{
+        height: 415px;
+        width: 100vw;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        z-index: 50;
+        .map{
+            height: 690px;
+            width: 100vw;
+            margin-top: 10px;
+            background: url(../image/map.png) no-repeat center center / cover;
+            opacity: 0.6;
+            overflow: hidden;
+            position: absolute;
+            z-index: 20;
+        }
+        .map__contents{
+            color: #fff;
+            position: absolute;
+            z-index: 25;
+            .map__title{
+                font-size: 30px;
+                margin: 11% auto auto 40px;
+            }
+            .line{
+                width: 75px;
+                border-top: 1px solid #fff;
+                margin-top: 20px;
+            }
+            .map__content{
+                width: 79%;
+                margin: 40px auto 61px;
+            }
+        }
     }
 }
