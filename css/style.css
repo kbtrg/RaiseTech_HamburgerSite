@@ -95,7 +95,7 @@ input {
 .layer1--black .layer2--black {
   height: 415px;
   width: 100vw;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   z-index: 30;
 }
