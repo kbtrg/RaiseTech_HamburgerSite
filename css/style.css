@@ -96,20 +96,20 @@ input {
   opacity: 0.6;
   overflow: hidden;
   position: absolute;
+  z-index: 20;
 }
-.map__wrapper .map::after {
-  height: 415px;
+.map__wrapper .map::before {
+  height: 690px;
   width: 100%;
   content: "";
   background-color: #000;
-  opacity: 0.3;
   position: absolute;
-  z-index: 10;
+  z-index: 0;
 }
 .map__wrapper .map__contents {
   color: #fff;
   position: absolute;
-  z-index: 25;
+  z-index: 10;
 }
 .map__wrapper .map__contents .map__title {
   font-size: 30px;
@@ -127,12 +127,13 @@ input {
   margin: 40px auto 61px;
 }
 .map__wrapper .black_layer {
-  height: 690px;
+  height: 415px;
   width: 100%;
   content: "";
   background-color: #000;
+  opacity: 0.3;
   position: absolute;
-  z-index: 0;
+  z-index: 30;
 }
 
 .c-main__top {
