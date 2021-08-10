@@ -43,55 +43,48 @@
     height: 690px;
     width: 100%;
     position: relative;
-    .map{
-        height: 690px;
-        width: 100vw;
-        margin-top: 10px;
-        background: url(../image/map.png) no-repeat center center / cover;
+
+    img.map{
+        height: 100%;
+        width: 100%;
         opacity: 0.6;
-        overflow: hidden;
+        //overflow: hidden;
         position: absolute;
-        z-index: 20;
+        z-index: 10;
+        min-width: 100%;
+        min-height: 100%;
         
         &::before{
-            height: 690px;
-            width: 100%;
-            content: "";
-            background-color: #000;
-            //opacity: 0.3;
-            position: absolute;
-            z-index: 0;
-        }
-        
-        &__contents{
-            color: #fff;
-            position: absolute;
-            z-index: 10;
-            .map__title{
-                font-size: 30px;
-                margin: 11% auto auto 40px;
-            }
-            .line{
-                width: 75px;
-                border-top: 1px solid #fff;
-                margin-top: 20px;
-            }
-            .map__content{
-                font-size: 14px;
-                line-height: 2.36;
-                width: 79%;
-                margin: 40px auto 61px;
-            }
-        }
-    }
-    .black_layer{
             height: 415px;
             width: 100%;
             content: "";
             background-color: #000;
             opacity: 0.3;
             position: absolute;
-            z-index: 30;
+            z-index: 20;
+        }
+    }
         
+    .map__contents{
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        background-color: #000;
+        position: absolute;
+        .map__title{
+            font-size: 30px;
+            margin: 11% auto auto 40px;
+            &__under-line{
+                width: 75px;
+                border-top: 1px solid #fff;
+                margin-top: 20px;
+            }
+        }
+        .map__content{
+            font-size: 14px;
+            line-height: 2.36;
+            width: 79%;
+            margin: 40px auto 61px;
+        }
     }
 }
