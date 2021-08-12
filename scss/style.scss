@@ -14,14 +14,14 @@
 
 /* component
 ---------------------------------------------------------*/
-@import "object/component/_main__content";
-@import "object/component/_main__top";
 @import "object/component/_searchform";
 
 
 /* project
 ---------------------------------------------------------*/
-//@import "object/project/"
+@import "object/project/_main__contents";
+@import "object/project/_main__map";
+@import "object/project/_main__top";
 
 
 /* utility

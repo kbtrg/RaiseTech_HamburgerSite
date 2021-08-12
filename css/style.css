@@ -40,6 +40,47 @@ input {
 
 /* component
 ---------------------------------------------------------*/
+.c-search {
+  width: 320px;
+  margin: 38px auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.c-search .search-form {
+  height: 46px;
+  width: 230px;
+  margin-right: 14px;
+  position: relative;
+}
+.c-search .search-form::before {
+  height: 46px;
+  width: 46px;
+  content: "";
+  background-image: url("../image/search.svg");
+  background-size: 50% 50%;
+  background-position: center;
+  display: inline-block;
+  position: absolute;
+}
+.c-search .search-form .search-text {
+  height: 46px;
+  width: 230px;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-left: 46px;
+}
+.c-search .submit {
+  height: 46px;
+  width: 78px;
+  border-width: 1px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* project
+---------------------------------------------------------*/
 .c-main__content {
   height: 642px;
   width: 90%;
@@ -148,46 +189,5 @@ input {
   margin: 119px 0 0 25px;
 }
 
-.c-search {
-  width: 320px;
-  margin: 38px auto 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.c-search .search-form {
-  height: 46px;
-  width: 230px;
-  margin-right: 14px;
-  position: relative;
-}
-.c-search .search-form::before {
-  height: 46px;
-  width: 46px;
-  content: "";
-  background-image: url("../image/search.svg");
-  background-size: 50% 50%;
-  background-position: center;
-  display: inline-block;
-  position: absolute;
-}
-.c-search .search-form .search-text {
-  height: 46px;
-  width: 230px;
-  border-width: 1px;
-  border-radius: 10px;
-  padding-left: 46px;
-}
-.c-search .submit {
-  height: 46px;
-  width: 78px;
-  border-width: 1px;
-  border-radius: 10px;
-  font-size: 17px;
-}
-
-/* project
----------------------------------------------------------*/
 /* utility
 ---------------------------------------------------------*//*# sourceMappingURL=style.css.map */
