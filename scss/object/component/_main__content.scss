@@ -39,38 +39,19 @@
     background: url(../image/eat-in.png) no-repeat center center / cover;
 }
 
+
+
+
 .map__wrapper{
     height: 690px;
     width: 100%;
     position: relative;
-
-    img.map{
-        height: 100%;
-        width: 100%;
-        opacity: 0.6;
-        //overflow: hidden;
-        position: absolute;
-        z-index: 10;
-        min-width: 100%;
-        min-height: 100%;
-        
-        &::before{
-            height: 415px;
-            width: 100%;
-            content: "";
-            background-color: #000;
-            opacity: 0.3;
-            position: absolute;
-            z-index: 20;
-        }
-    }
-        
     .map__contents{
         height: 100%;
         width: 100%;
         color: #fff;
-        background-color: #000;
         position: absolute;
+        z-index: 30;
         .map__title{
             font-size: 30px;
             margin: 11% auto auto 40px;
@@ -87,4 +68,27 @@
             margin: 40px auto 61px;
         }
     }
-}
+    .black-layer--front{
+        height: 415px;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        position: absolute;
+        z-index: 20;
+    }
+    img.map{
+        height: 100%;
+        width: 100%;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 10;
+        object-fit: cover;
+    }
+    .black-layer--back{
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        z-index: 0;
+    }
+}    

@@ -88,30 +88,12 @@ input {
   width: 100%;
   position: relative;
 }
-.map__wrapper img.map {
-  height: 100%;
-  width: 100%;
-  opacity: 0.6;
-  position: absolute;
-  z-index: 10;
-  min-width: 100%;
-  min-height: 100%;
-}
-.map__wrapper img.map::before {
-  height: 415px;
-  width: 100%;
-  content: "";
-  background-color: #000;
-  opacity: 0.3;
-  position: absolute;
-  z-index: 20;
-}
 .map__wrapper .map__contents {
   height: 100%;
   width: 100%;
   color: #fff;
-  background-color: #000;
   position: absolute;
+  z-index: 30;
 }
 .map__wrapper .map__contents .map__title {
   font-size: 30px;
@@ -127,6 +109,30 @@ input {
   line-height: 2.36;
   width: 79%;
   margin: 40px auto 61px;
+}
+.map__wrapper .black-layer--front {
+  height: 415px;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 20;
+}
+.map__wrapper img.map {
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.map__wrapper .black-layer--back {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  z-index: 0;
 }
 
 .c-main__top {
