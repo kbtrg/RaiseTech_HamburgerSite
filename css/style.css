@@ -36,7 +36,7 @@ input {
   background: #FFF7EF;
   overflow: hidden;
   height: 217px;
-  width: 100vw;
+  width: 100%;
 }
 .l-header .ham-menu {
   margin: 14px 16px auto auto;
@@ -53,6 +53,15 @@ input {
   margin: 0 86px 0 86px;
   padding: 0;
   text-align: center;
+}
+
+.l-sidebar {
+  width: 100%;
+  height: 2716px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
 
 /* component
@@ -195,7 +204,7 @@ input {
 
 .c-main__top {
   height: 285px;
-  width: 100vw;
+  width: 100%;
   background: url(../image/home_top.png) no-repeat center center/cover;
   position: relative;
 }
@@ -204,6 +213,14 @@ input {
   color: #ffffff;
   position: absolute;
   margin: 119px 0 0 25px;
+}
+
+.p-sidebar__menu {
+  width: 328px;
+  height: 100%;
+  background-color: #F2EDE9;
+  position: absolute;
+  right: 0;
 }
 
 /* utility
