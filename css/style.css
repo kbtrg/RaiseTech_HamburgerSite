@@ -13,6 +13,17 @@ input {
   outline: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* layout
 ---------------------------------------------------------*/
 .l-footer {
@@ -110,7 +121,7 @@ input {
 .c-main__content {
   height: 642px;
   width: 90%;
-  margin: 5%;
+  margin: 20px 5% 0;
   position: relative;
 }
 .c-main__content__title {
@@ -153,6 +164,7 @@ input {
 .map__wrapper {
   height: 690px;
   width: 100%;
+  margin-top: 49px;
   position: relative;
 }
 .map__wrapper .map__contents {
@@ -215,12 +227,31 @@ input {
   margin: 119px 0 0 25px;
 }
 
-.p-sidebar__menu {
+.p-sidebar__menu__back {
   width: 328px;
   height: 100%;
   background-color: #F2EDE9;
   position: absolute;
   right: 0;
+}
+
+.p-sidebar__menus {
+  color: #707070;
+  margin: 212px 7% auto 14%;
+}
+.p-sidebar__menus .p-sidebar__main-menu {
+  font-family: "M+ 1m";
+  font-weight: 900;
+  font-size: 24px;
+}
+.p-sidebar__menus .p-sidebar__main-menu .p-sidebar__sub-menus {
+  margin: 40px auto 34px 20px;
+}
+.p-sidebar__menus .p-sidebar__main-menu .p-sidebar__sub-menus .p-sidebar__sub-menu {
+  font-family: "M+ 1m";
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 22px;
 }
 
 /* utility
