@@ -1,5 +1,8 @@
 $(function(){
+    $('.ham-menu').click(function() {
+        $('.l-sidebar').fadeIn(300);  
+    });
     $('.c-ham-btn').click(function() {
-        $('div').fadeIn(1500);  
+        $('.l-sidebar').fadeOut(300);  
     });
 });
