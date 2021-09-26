@@ -1,0 +1,13 @@
+$PC:    1025px;     //PC幅
+$iPad:  600px;      //iPad幅
+
+@mixin PC{
+    @media (max-width: ($PC)){
+        @content;
+    }
+}
+@mixin iPad{
+    @media (max-width: ($iPad)){
+        @content;
+    }
+}
