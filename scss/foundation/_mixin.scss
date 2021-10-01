@@ -1,13 +1,14 @@
-$PC:    1025px;     //PC幅
-$iPad:  600px;      //iPad幅
+$iPad:  960px;      //iPad幅上限
+$sp:    520px;      //スマホ幅上限
 
-@mixin PC{
-    @media (max-width: ($PC)){
+
+@mixin iPad{
+    @media (max-width: ($iPad)){
         @content;
     }
 }
-@mixin iPad{
-    @media (max-width: ($iPad)){
+@mixin sp{
+    @media (max-width: ($sp)){
         @content;
     }
 }

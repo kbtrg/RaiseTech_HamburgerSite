@@ -3,4 +3,13 @@
     overflow: hidden;
     height: 217px;
     width: 100%;
+    &__contents{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 67px;
+        @include iPad{
+            display: block;
+            margin: 0;
+        }
+    }
 }

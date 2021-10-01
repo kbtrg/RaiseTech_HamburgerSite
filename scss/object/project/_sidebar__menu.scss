@@ -5,6 +5,14 @@
     position: absolute;
     right: 0;
 }
+.ham-menu--PC{
+    position: relative;
+    top: 46px;
+    left: 82px;
+    @include iPad{
+        display: none;
+    }
+}
 .p-sidebar__menus{
     color: #707070;
     margin: 212px 7% auto 14% ;

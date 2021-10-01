@@ -1,9 +1,17 @@
 .l-sidebar{
-    display: none;
-    width: 100%;
+    display: block;
     height: 2716px;
+    width: 20%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
+    @include iPad{
+        display: none;
+        width: 100%;
+    }
+    @include sp{
+        display: none;
+        width: 100%;
+    }
 }

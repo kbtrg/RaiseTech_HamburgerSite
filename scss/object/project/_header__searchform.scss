@@ -1,10 +1,11 @@
 .c-search{
-    width: 320px;
-    margin: 38px auto 0 auto;
+    width: 546px;
+    height: 46px;
+    margin: auto 30px auto 0;
     display: flex;
     .search-form{
         height: 46px;
-        width: 230px;
+        width: 396px;
         margin-right: 14px;
         position: relative;
         &::before{
@@ -19,7 +20,7 @@
         }
         .search-text{
             height: 46px;
-            width: 230px;
+            width: 396px;
             border-width: 1px;
             border-radius: 10px;
             padding-left: 46px;
@@ -27,10 +28,35 @@
     }
     .submit{
         height: 46px;
-        width: 78px;
+        width: 136px;
         border-width: 1px;
         border-radius: 10px;
         font-size: 17px;
     }
-   
+    @include iPad{
+        width: 546px;
+        margin: 38px auto 0 auto;
+        .search-form{
+            width: 396px;
+            .search-text{
+                width: 396px;
+            }
+        }
+        .submit{
+            width: 136px;
+        }
+    }
+    @include sp{
+        width: 85vw;
+        margin: 38px auto 0 auto;
+        .search-form{
+            width: 61vw;
+            .search-text{
+                width: 61vw;
+            }
+        }
+        .submit{
+            width: 21vw;
+        }
+    }
 }
