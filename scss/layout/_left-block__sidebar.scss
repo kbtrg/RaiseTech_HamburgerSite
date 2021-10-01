@@ -1,9 +1,27 @@
 .container__left-block__sidebar{
     display: flex;
+    @include iPad{
+        display: block;
+    }
+    @include sp{
+        display: block;
+    }
     .l-left-block{
         width: 80%;
+        @include iPad{
+            width: 100%;
+        }
+        @include sp{
+            width: 100%;
+        }
     }
     .l-sidebar{
         width: 20%;
+        @include iPad{
+            width: 100%;
+        }
+        @include sp{
+            width: 100%;
+        }
     }
 }
