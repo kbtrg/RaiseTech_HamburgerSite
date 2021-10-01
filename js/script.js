@@ -14,8 +14,8 @@ $(window).resize(function(){
 //Windowサイズの取得
 $windowWidth = window.innerWidth;
 //Windowサイズの定義
-$sp = 787;
-$iPad = 980;
+$sp = 520;
+$iPad = 960;
 //Windowサイズ判定
 isMobileSize = ($windowWidth < $sp);
 isTabletSize = ($windowWidth <= $iPad) && ($windowWidth > $sp);

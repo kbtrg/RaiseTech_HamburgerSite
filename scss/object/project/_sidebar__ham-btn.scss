@@ -1,4 +1,6 @@
 .c-ham-btn{
+    display: none;
+
     width: 50px;
     height: 50px;
     position: absolute;
@@ -16,5 +18,8 @@
         &:nth-of-type(2){
             transform: rotate(-45deg);
         }
+    }
+    @include iPad{
+        display: block;
     }
 }

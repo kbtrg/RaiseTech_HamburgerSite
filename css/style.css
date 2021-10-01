@@ -200,7 +200,7 @@ li {
     margin-left: auto;
     font-size: 4vw;
     height: auto;
-    width: 100px;
+    width: 13%;
   }
 }
 @media (max-width: 520px) {
@@ -325,6 +325,7 @@ li {
 }
 
 .c-ham-btn {
+  display: none;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -345,6 +346,11 @@ li {
 .c-ham-btn__line:nth-of-type(2) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+@media (max-width: 960px) {
+  .c-ham-btn {
+    display: block;
+  }
 }
 
 .p-sidebar__menu__back {
